@@ -1,0 +1,81 @@
+name: update readme cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # regenerate once a day
+  workflow_dispatch: {}    # lets you trigger it manually from the Actions tab
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin - shiftguard10
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=shiftguard10-robust-image-classification&theme=tokyonight&hide_border=true
+          path: profile/pin-shiftguard10.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin - sangam_okcredit
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=sangam_okcredit&theme=tokyonight&hide_border=true
+          path: profile/pin-sangam.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin - sapiex-agent
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=sapiex-agent&theme=tokyonight&hide_border=true
+          path: profile/pin-sapiex.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin - citylens-group31
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=citylens-group31&theme=tokyonight&hide_border=true
+          path: profile/pin-citylens.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin - spring-street-frontend
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=spring-street-frontend&theme=tokyonight&hide_border=true
+          path: profile/pin-springstreet.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git diff --staged --quiet || git commit -m "chore: update readme cards [skip ci]"
+          git push
