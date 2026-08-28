@@ -41,15 +41,15 @@
 
 <table align="center">
   <tr>
-    <td><a href="https://github.com/Dipanshur19/shiftguard10-robust-image-classification"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Dipanshur19&repo=shiftguard10-robust-image-classification&theme=tokyonight&hide_border=true" /></a></td>
-    <td><a href="https://github.com/Dipanshur19/sangam_okcredit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Dipanshur19&repo=sangam_okcredit&theme=tokyonight&hide_border=true" /></a></td>
+    <td><a href="https://github.com/Dipanshur19/shiftguard10-robust-image-classification"><img src="profile/pin-shiftguard10.svg" /></a></td>
+    <td><a href="https://github.com/Dipanshur19/sangam_okcredit"><img src="profile/pin-sangam.svg" /></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/Dipanshur19/sapiex-agent"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Dipanshur19&repo=sapiex-agent&theme=tokyonight&hide_border=true" /></a></td>
-    <td><a href="https://github.com/Dipanshur19/citylens-group31"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Dipanshur19&repo=citylens-group31&theme=tokyonight&hide_border=true" /></a></td>
+    <td><a href="https://github.com/Dipanshur19/sapiex-agent"><img src="profile/pin-sapiex.svg" /></a></td>
+    <td><a href="https://github.com/Dipanshur19/citylens-group31"><img src="profile/pin-citylens.svg" /></a></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><a href="https://github.com/Dipanshur19/spring-street-frontend"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Dipanshur19&repo=spring-street-frontend&theme=tokyonight&hide_border=true" /></a></td>
+    <td colspan="2" align="center"><a href="https://github.com/Dipanshur19/spring-street-frontend"><img src="profile/pin-springstreet.svg" /></a></td>
   </tr>
 </table>
 
@@ -77,16 +77,12 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Dipanshur19&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dipanshur19&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
+  <img height="165" src="profile/stats.svg" alt="GitHub stats" />
+  <img height="165" src="profile/top-langs.svg" alt="Top languages" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Dipanshur19&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Dipanshur19&theme=tokyonight&no-frame=true&row=1&column=6" alt="Trophies" />
 </p>
 
 <br/>
